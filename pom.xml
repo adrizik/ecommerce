@@ -76,6 +76,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>ecommerce-integration</finalName>
 	</build>
 
 </project>
