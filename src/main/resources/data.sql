@@ -1,0 +1,33 @@
+INSERT INTO account (email, password, balance) VALUES
+('peter.parker@gmail.com', 'spiderman', 0.00);
+
+INSERT INTO product (title, price) VALUES
+ ('shoes', 19.00),
+ ('purse', 59.00),
+ ('watch', 142.00),
+ ('sweater', 60.00),
+ ('hat', 29.00),
+ ('jacket', 99.00),
+ ('scarf', 25.00),
+ ('gloves', 12.00),
+ ('belt', 35.00),
+ ('backpack', 45.00),
+ ('earrings', 18.00),
+ ('necklace', 45.00),
+ ('bracelet', 30.00),
+ ('ring', 25.00),
+ ('sunglasses', 50.00),
+ ('wallet', 39.99),
+ ('socks', 8.99),
+ ('t-shirt', 20.00),
+ ('pants', 45.00),
+ ('shorts', 30.00),
+ ('sneakers', 70.00),
+ ('sandals', 35.00),
+ ('boots', 90.00),
+ ('heels', 55.00),
+ ('flats', 40.00),
+ ('loafers', 50.00),
+ ('dress', 75.00),
+ ('skirt', 40.00),
+ ('blouse', 35.00);
