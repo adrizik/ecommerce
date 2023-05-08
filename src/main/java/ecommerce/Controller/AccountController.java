@@ -36,7 +36,10 @@ public class AccountController {
         return accountService.login(account);
     }
 
-
+    /**
+     * As an admin I should be able to see all accounts
+     * POST localhost:9000/accounts
+     */
     @GetMapping("accounts")
     public List<Account> getAllAccounts() {
         return accountService.getAllAccounts();
@@ -45,13 +48,17 @@ public class AccountController {
 
     /**
      * As a user I should be able to add products to my account
-     * POST localhost:9000/
+     * POST localhost:9000/{account_id}/add/{product_id}
      */
     @PostMapping("{account_id}/add/{product_id}")
     public Account addProducts(@PathVariable long account_id, @PathVariable long product_id) throws ServiceException {
         return accountService.addProducts(account_id, product_id);
     }
 
+    /**
+     * As a user I should be able to checkout.
+     * POST localhost:9000/{checkout/{id}
+     */
     @PostMapping("checkout/{id}")
     public Account checkout(@PathVariable long id) throws ServiceException {
         return accountService.checkout(id);
